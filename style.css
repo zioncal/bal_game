@@ -8,7 +8,7 @@ body {
 }
 
 #game-container {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -24,19 +24,53 @@ body {
 }
 
 .balloon {
-    width: 60px;
-    height: 80px;
+    width: 20vw;
+    height: 25vh;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 5vw;
     cursor: pointer;
 }
 
 #score-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0;
+    font-size: 4vw;
+}
+
+button {
+    font-size: 5vw;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"] {
+    font-size: 4vw;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h1, h2 {
+    font-size: 6vw;
+}
+
+#end-screen img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
 }

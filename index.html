@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="welcome-screen">
+            <h1>Welcome to the Addition Game!</h1>
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="game-stage" style="display: none;">
+            <h2 id="stage-instructions"></h2>
+            <div id="balloon-container"></div>
+            <div id="score-container">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time: <span id="timer">0</span> seconds</p>
+            </div>
+            <button id="next-stage" onclick="nextStage()" style="display: none;">Go to Next Step</button>
+        </div>
+
+        <div id="end-screen" style="display: none;">
+            <h1>Well Done!</h1>
+            <p>Your score: <span id="final-score"></span></p>
+            <img src="victory.png" alt="Victory">
+            <button onclick="restartGame()">New Game</button>
+        </div>
+    </div>
+
+    <audio id="sound" src="sound.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
+
